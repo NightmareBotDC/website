@@ -3,7 +3,7 @@
 	import Header from './components/Header.svelte';
 </script>
 
-<header class="ml-4">
+<header class="mt-4 ml-4">
 	<Header />
 </header>
 
