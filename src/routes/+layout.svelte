@@ -3,9 +3,11 @@
 	import Header from './components/Header.svelte';
 </script>
 
-<header>
+<header class="ml-4">
 	<Header />
 </header>
+
+<div class="p-3"></div>
 
 <section id="content" class="m-4">
 	<slot />
