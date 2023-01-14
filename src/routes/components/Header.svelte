@@ -1,6 +1,6 @@
 <script lang="ts">
-   export let user: any;
-   user = user;
+   export let User: any;
+   User = User;
    
    export let Title: string;
    export let Description: string;
