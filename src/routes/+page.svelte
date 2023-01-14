@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Meta from "./components/Meta.svelte";
+
     export let data: any;
 
     let artists: String;
@@ -6,6 +8,8 @@
     if (data.currentlyPlaying.error) artists = "";
     else artists = data.currentlyPlaying.item.artists.map((artist: any) => { return artist.name }).join(", ");
 </script>
+
+<Meta Title="Home - Nightmare Bot" Description="Official website for Nightmare Bot" />
 
 <div id="currentlyPlaying">
     <h2 class="text-white">Currently Playing:</h2>
