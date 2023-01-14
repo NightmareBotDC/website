@@ -5,9 +5,7 @@
         export let data;
 </script>
 
-<header class="mt-4 ml-4">
-	<Header User={data.user || null} />
-</header>
+<Header User={data.user || null} />
 
 <div class="p-3"></div>
 
