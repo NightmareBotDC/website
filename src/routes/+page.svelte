@@ -9,7 +9,7 @@
     else artists = data.currentlyPlaying.item.artists.map((artist: any) => { return artist.name }).join(", ");
 </script>
 
-<Meta Title="Home - Nightmare Bot" Description="Official website for Nightmare Bot" />
+<Meta Title="Home" Description="Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems." />
 
 <div id="currentlyPlaying">
     <h2 class="text-white">Currently Playing:</h2>
