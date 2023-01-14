@@ -1,10 +1,21 @@
 <script lang="ts">
    export let user: any;
    user = user;
-
-   export let page: string;
-   page = page;
+   
+   export let Title: string;
+   export let Description: string;
+   export let Image: string = '/logo.png';
 </script>
+
+<svelte:head>
+	<title>{Title}</title>
+	<meta property="og:title" content={Title} />
+	<meta property="og:site_name" content="Nightmare Project" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://nightmarebot.tk/" />
+	<meta property="og:image" content={Image} />
+	<meta property="og:description" content={Description} />
+</svelte:head>
 
 <div class="min-h-full">
   <nav class="bg-gray-800">
@@ -138,7 +149,7 @@
 
   <header class="bg-white shadow">
     <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-bold tracking-tight text-gray-900">{page}</h1>
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900">{Title}</h1>
     </div>
   </header>
 </div>
