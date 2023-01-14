@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Meta from "./components/Meta.svelte";
+    import Header from "./components/Header.svelte";
 
     export let data: any;
 
@@ -9,7 +9,8 @@
     else artists = data.currentlyPlaying.item.artists.map((artist: any) => { return artist.name }).join(", ");
 </script>
 
-<Meta Title="Home" Description="Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems." />
+
+<Header Title="Home" Description="Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems." User={data.user} />
 
 <div id="currentlyPlaying">
     <h2 class="text-white">Currently Playing:</h2>
