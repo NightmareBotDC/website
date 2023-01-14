@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let Title: string;
 	export let Description: string;
-	export let Image: string = '/logo.webp';
+	export let Image: string = '/favicon.png';
 </script>
 
 <svelte:head>
