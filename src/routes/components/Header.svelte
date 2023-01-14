@@ -94,7 +94,7 @@
 
         <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reports</a>
       </div>
-      {#if data.user}
+      {#if User}
       <div class="border-t border-gray-700 pt-4 pb-3">
         <div class="flex items-center px-5">
           <div class="flex-shrink-0">
