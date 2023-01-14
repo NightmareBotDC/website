@@ -16,7 +16,6 @@
 			menuIcon.className.baseVal = 'block h-6 w-6';
 			closeIcon.className.baseVal = 'hidden h-6 w-6';
 		}
-	}
 }
 
 </script>
