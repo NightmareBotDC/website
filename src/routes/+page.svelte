@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Header from "./components/Header.svelte";
+    import Meta from "./components/Meta.svelte";
 
     export let data: any;
 
@@ -10,7 +10,7 @@
 </script>
 
 
-<Header Title="Home" Description="Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems." User={data.user || null} />
+<Meta Title="Home" Description="Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems." />
 
 <div id="currentlyPlaying">
     <h2 class="text-black">Currently Playing:</h2>
