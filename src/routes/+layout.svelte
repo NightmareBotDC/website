@@ -1,6 +1,8 @@
 <script>
 	import '../app.css';
 	import Header from './components/Header.svelte';
+
+        export let data;
 </script>
 
 <header class="mt-4 ml-4">
