@@ -5,7 +5,28 @@ export const load = async ({ request, setHeaders }) => {
 
     const currentlyPlaying = await fetch("https://api.nightmarebot.tk/api/spotify/playing").then((res) => res.json());
 
-    return {
+    if (cookies.token) {
+		const userData = await fetch(
+			`https://api.nightmarebot.tk/api/users/getwithtoken?token=${cookies.token}`
+		)
+			.then((res) => res.json())
+			.catch((err) => {
+				throw new Error(err);
+			});
+
+		if (userData.error)
+			return {
+				user: null,
+                                currentlyPlaying: currentlyPlaying
+			};
+		else
+			return {
+				user: userData,
+                                currentlyPlaying: currentlyPlaying
+			};
+	}
+     else return {
+        user: null,
         currentlyPlaying: currentlyPlaying
     };
 };
