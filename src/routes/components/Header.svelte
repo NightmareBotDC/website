@@ -94,6 +94,7 @@
 
         <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reports</a>
       </div>
+      {#if data.user}
       <div class="border-t border-gray-700 pt-4 pb-3">
         <div class="flex items-center px-5">
           <div class="flex-shrink-0">
@@ -118,6 +119,7 @@
           <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Sign out</a>
         </div>
       </div>
+     {/if}
     </div>
   </nav>
 </div>
