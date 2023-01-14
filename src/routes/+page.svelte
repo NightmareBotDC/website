@@ -10,7 +10,7 @@
 </script>
 
 
-<Header Title="Home" Description="Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems." User={data.user} />
+<Header Title="Home" Description="Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems." User={data.user || null} />
 
 <div id="currentlyPlaying">
     <h2 class="text-white">Currently Playing:</h2>
