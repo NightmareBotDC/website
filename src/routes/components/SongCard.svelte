@@ -7,9 +7,15 @@
 </script>
 
 <div class="SongCard">
-   <img src={AlbumArt} alt="{Album} Album Cover" />
-   <h3 class="text-white font-bold">{Title}</h3>
-   <h6 class="text-white">{Album}</h6>
-   <h5 class="text-white">{Artists}</h5>
-   <img src={ArtistImage} alt="Main Artist Image" />
+<div
+	id={Title}
+	class="p-6 max-w-sm bg-white rounded-md border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+>
+	<div class="flex">
+           <img class="h-8 rounded-full" src={AlbumArt} height="32px" width="32px" alt="{Album} - Album Cover" />
+           <h2 class="ml-2 text-2xl font-bold tracking-light text-gray-900 dark:text-white">{Title}</h2>
+        </div>
+
+	<p class="mt-3 mb-2 font-normal text-gray-700 dark:text-gray-400">{Artists}</p>
+</div>
 </div>
