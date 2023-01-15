@@ -1,7 +1,7 @@
 <script lang="ts">
-   export let Title: string;
-   export let Description: string;
-   export let Image: string = '/logo.png';
+	export let Title: string;
+	export let Description: string;
+	export let Image: string = '/logo.png';
 </script>
 
 <svelte:head>

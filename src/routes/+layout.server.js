@@ -1,11 +1,13 @@
-import cookie from "cookie";
+import cookie from 'cookie';
 
 export const load = async ({ request, setHeaders }) => {
-    const cookies = cookie.parse(request.headers.get("cookie") || '');
+	const cookies = cookie.parse(request.headers.get('cookie') || '');
 
-    const currentlyPlaying = await fetch("https://api.nightmarebot.tk/api/spotify/playing").then((res) => res.json());
+	const currentlyPlaying = await fetch('https://api.nightmarebot.tk/api/spotify/playing').then(
+		(res) => res.json()
+	);
 
-    if (cookies.token) {
+	if (cookies.token) {
 		const userData = await fetch(
 			`https://api.nightmarebot.tk/api/users/getwithtoken?token=${cookies.token}`
 		)
@@ -17,16 +19,16 @@ export const load = async ({ request, setHeaders }) => {
 		if (userData.error)
 			return {
 				user: null,
-                                currentlyPlaying: currentlyPlaying
+				currentlyPlaying: currentlyPlaying
 			};
 		else
 			return {
 				user: userData,
-                                currentlyPlaying: currentlyPlaying
+				currentlyPlaying: currentlyPlaying
 			};
-	}
-     else return {
-        user: null,
-        currentlyPlaying: currentlyPlaying
-    };
+	} else
+		return {
+			user: null,
+			currentlyPlaying: currentlyPlaying
+		};
 };

@@ -2,12 +2,12 @@
 	import '../app.css';
 	import Header from './components/Header.svelte';
 
-        export let data;
+	export let data;
 </script>
 
 <Header User={data.user || null} />
 
-<div class="p-3"></div>
+<div class="p-3" />
 
 <section id="content" class="m-4">
 	<slot />
