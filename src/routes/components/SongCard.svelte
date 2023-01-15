@@ -11,7 +11,7 @@
 	id={Title}
 	class="p-6 max-w-sm bg-white rounded-md border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
 >
-        <img class="h-15 rounded-half" src={AlbumArt} height="32px" width="32px" alt="{Album} - Album Cover" />
+        <img class="h-15 rounded-half object-center" src={AlbumArt} height="32px" width="32px" alt="{Album} - Album Cover" />
 	<h2 class="text-center text-2xl font-bold tracking-light text-gray-900 dark:text-white">{Title}</h2>
 
         <div class="p-2"></div>
