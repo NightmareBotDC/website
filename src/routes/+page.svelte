@@ -20,6 +20,6 @@
 				.map((artist) => {
 					return artist.name;
 				})
-				.join(', ')} AlbumArt="/logo.png" ArtistImage="/logo.png" />
+				.join(', ')} AlbumArt={data.currentlyPlaying.item.album.images[0].url} ArtistImage="/logo.png" />
 	{/if}
 </div>
