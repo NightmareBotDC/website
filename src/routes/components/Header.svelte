@@ -2,11 +2,20 @@
 	export let User: any;
 	User = User;
 
+	const navigation = [
+		{
+			name: 'Home',
+			href: '/',
+			current: true
+		}
+	];
+
 	const openMobileMenu = () => {
 		const menu = document.getElementById('mobile-menu') as HTMLDivElement;
 		const menuIcon = document.getElementById('menuIcon') as HTMLElement;
 		const closeIcon = document.getElementById('closeIcon') as HTMLElement;
 		const currentClass = menu.className;
+
 		if (currentClass === 'hidden') {
 			menu.className = 'block';
 			menuIcon.className.baseVal = 'hidden h-6 w-6';
@@ -16,6 +25,10 @@
 			menuIcon.className.baseVal = 'block h-6 w-6';
 			closeIcon.className.baseVal = 'hidden h-6 w-6';
 		}
+	};
+
+	const classNames = (...classes: any) => {
+		return classes.filter(Boolean).join(' ');
 	};
 </script>
 
@@ -29,35 +42,18 @@
 					</div>
 					<div class="hidden md:block">
 						<div class="ml-10 flex items-baseline space-x-4">
-							<a
-								href="#"
-								class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
-								aria-current="page">Dashboard</a
-							>
-
-							<a
-								href="#"
-								class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-								>Team</a
-							>
-
-							<a
-								href="#"
-								class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-								>Projects</a
-							>
-
-							<a
-								href="#"
-								class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-								>Calendar</a
-							>
-
-							<a
-								href="#"
-								class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-								>Reports</a
-							>
+							{#each navigation as item}
+								<a
+									href={item.href}
+									class={classNames(
+										item.current
+											? 'bg-gray-900 text-white'
+											: 'text-gray-300 hover:bg-gray-700 hover:text-white',
+										'px-3 py-2 rounded-md text-sm font-medium'
+									)}
+									aria-current={item.current ? 'page' : undefined}>{item.name}</a
+								>
+							{/each}
 						</div>
 					</div>
 				</div>
@@ -181,36 +177,20 @@
 
 		<div class="hidden" id="mobile-menu">
 			<div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-				<a
-					href="#"
-					class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-					aria-current="page">Dashboard</a
-				>
-
-				<a
-					href="#"
-					class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-					>Team</a
-				>
-
-				<a
-					href="#"
-					class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-					>Projects</a
-				>
-
-				<a
-					href="#"
-					class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-					>Calendar</a
-				>
-
-				<a
-					href="#"
-					class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-					>Reports</a
-				>
+				{#each navigation as item}
+					<a
+						href={item.href}
+						class={classNames(
+							item.current
+								? 'bg-gray-900 text-white'
+								: 'text-gray-300 hover:bg-gray-700 hover:text-white',
+							'block px-3 py-2 rounded-md text-base font-medium'
+						)}
+						aria-current={item.current ? 'page' : undefined}>{item.name}</a
+					>
+				{/each}
 			</div>
+            
 			{#if User}
 				<div class="border-t border-gray-700 pt-4 pb-3">
 					<div class="flex items-center px-5">

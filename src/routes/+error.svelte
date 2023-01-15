@@ -8,7 +8,7 @@
 	subText = 'But dont worry, you can find plenty of other things on our homepage.';
 </script>
 
-<Meta Title={$page.status} Description={$page.error.message} />
+<Meta Title="Error {$page.status}" Description={$page.error.message} />
 
 <section class="flex items-center h-full p-16 dark:bg-gray-900 dark:text-gray-100">
 	<div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
