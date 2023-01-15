@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Meta from './components/Meta.svelte';
+        import SongCard from './components/SongCard.svelte';
 
 	export let data: any;
 </script>
@@ -13,20 +14,12 @@
 	<h2 class="text-white">Currently Playing:</h2>
 
 	{#if data.currentlyPlaying.error}
-		<h4 class="text-white">{data.currentlyPlaying.error}</h4>
+		<SongCard Title="Hammed Burger 🍔😢" Album="Hammed Burger 🍔😢 - Single" Artists="selectdev" />
 	{:else}
-		<img
-			src={data.currentlyPlaying.item.album.images[0].url}
-			alt="{data.currentlyPlaying.item.album.name} album cover"
-		/>
-		<h2 class="text-white">Title: {data.currentlyPlaying.item.name}</h2>
-		<h3 class="text-white">Album: {data.currentlyPlaying.item.album.name}</h3>
-		<h3 class="text-white">
-			Artist(s): {data.currentlyPlaying.item.artists
+                <SongCard Title={data.currentlyPlaying.item.name} Album={data.currentlyPlaying.item.album.name} Artists={data.currentlyPlaying.item.artists
 				.map((artist) => {
 					return artist.name;
 				})
-				.join(', ')}
-		</h3>
+				.join(', ')} />
 	{/if}
 </div>
