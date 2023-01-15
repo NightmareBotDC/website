@@ -14,12 +14,12 @@
 	<h2 class="text-white">Currently Playing:</h2>
 
 	{#if data.currentlyPlaying.error}
-		<SongCard Title="Hammed Burger 🍔😢" Album="Hammed Burger 🍔😢 - Single" Artists="selectdev" />
+		<SongCard Title="Hammed Burger 🍔😢" Album="Hammed Burger 🍔😢 - Single" AlbumArt="/logo.png" Artists="selectdev" ArtistImage="/logo.png" />
 	{:else}
                 <SongCard Title={data.currentlyPlaying.item.name} Album={data.currentlyPlaying.item.album.name} Artists={data.currentlyPlaying.item.artists
 				.map((artist) => {
 					return artist.name;
 				})
-				.join(', ')} />
+				.join(', ')} AlbumArt="/logo.png" ArtistImage="/logo.png" />
 	{/if}
 </div>
