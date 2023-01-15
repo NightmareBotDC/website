@@ -4,9 +4,12 @@
    export let Artists: String;
    export let AlbumArt: String;
    export let ArtistImage: String;
+   export let Player: String = "Spotify";
 </script>
 
 <div class="SongCard">
+<h2 class="font-normal text-gray-700 dark:text-gray-400">{Player}</h2>
+
 <div
 	id={Title}
 	class="p-6 max-w-sm bg-white rounded-md border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
