@@ -2,10 +2,14 @@
    export let Title: String;
    export let Album: String;
    export let Artists: String;
+   export let AlbumArt: String;
+   export let ArtistImage: String;
 </script>
 
 <div class="SongCard">
+   <img src={AlbumArt} alt="{Album} Album Cover" />
    <h3 class="text-white font-bold">{Title}</h3>
    <h6 class="text-white">{Album}</h6>
    <h5 class="text-white">{Artists}</h5>
+   <img src={ArtistImage} alt="Main Artist Image" />
 </div>
