@@ -1,6 +1,11 @@
 <script>
 	import '../app.css';
 	import Header from './components/Header.svelte';
+        import { BarLoader } from 'svelte-loading-spinners';
+
+        let loading = true;
+        setTimeout(() => { loading = false }, 5000);
+
         export let data;
 </script>
 
@@ -8,6 +13,10 @@
 
 <div class="p-3" />
 
-<section id="content" class="m-4">
+{#if loading}
+   <BarLoader size="60" color="#FF3E00" unit="px" duration="5s" />
+{:else}
+   <section id="content" class="m-4">
 	<slot />
-</section>
+   </section>
+{/if}
