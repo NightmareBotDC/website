@@ -12,7 +12,7 @@
 	id={Title}
 	class="max-w-sm bg-white rounded-md border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
 >
-        <h2 class="pl-5 pt-4 font-normal text-gray-700 dark:text-gray-400">{Player}</h2>
+        <h2 class="pl-5 pt-4 font-normal text-gray-700 dark:text-gray-400">Currently Listening | {Player}</h2>
 
         <div class="p-6">
         <img class="mx-auto rounded-half" src={AlbumArt} height="120px" width="120px" alt="{Album} - Album Cover" />
