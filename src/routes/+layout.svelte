@@ -4,7 +4,7 @@
         import { BarLoader } from 'svelte-loading-spinners';
 
         let loading = true;
-        setTimeout(() => { loading = false }, 5000);
+        setTimeout(() => { loading = false }, 3000);
 
         export let data;
 </script>
