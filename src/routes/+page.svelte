@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Meta from './components/Meta.svelte';
         import SongCard from './components/SongCard.svelte';
-
 	export let data: any;
 </script>
 
@@ -20,6 +19,6 @@
 				.map((artist) => {
 					return artist.name;
 				})
-				.join(', ')} AlbumArt={data.currentlyPlaying.item.album.images[0].url} ArtistImage="/logo.png" />
+				.join(', ')} AlbumArt={data.currentlyPlaying.item.album.images[0].url} ArtistImage={data.currentlyPlaying.item.artistData.images[0].url} />
 	{/if}
 </div>
