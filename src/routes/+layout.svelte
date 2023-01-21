@@ -14,7 +14,7 @@
 <div class="p-3" />
 
 {#if loading}
-   <div class="flex items-center">
+   <div class="flex justify-center">
        <h2 class="text-white font-semibold">Loading...</h2>
        <BarLoader size="120" color="#FF3E00" unit="px" duration="1s" />
    </div>
