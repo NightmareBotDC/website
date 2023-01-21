@@ -21,7 +21,7 @@
         <div class="p-2"></div>
 
         <div class="flex">
-           <img class="h-8 rounded-full" src={ArtistImage} height="35px" width="35px" alt="Main Artist Image" />
+           <img class="rounded-full" src={ArtistImage} height="50px" width="50px" alt="Main Artist Image" />
 	   <p class="ml-2 mt-4 mb-2 font-normal text-gray-700 dark:text-gray-400">{Artists}</p>
         </div>
 </div>
