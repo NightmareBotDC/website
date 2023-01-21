@@ -1,7 +1,7 @@
 <script lang="ts">
    export let Title: String;
    export let Album: String;
-   export let Artists: String;
+   export let Artist: String;
    export let AlbumArt: String;
    export let ArtistImage: String;
    export let Player: String = "Spotify";
@@ -22,7 +22,7 @@
 
         <div class="flex">
            <img class="h-8 rounded-full" src={ArtistImage} height="30px" width="30px" alt="Main Artist Image" />
-	   <p class="ml-2 mt-1 mb-1 font-normal text-gray-700 dark:text-gray-400">{Artists}</p>
+	   <p class="ml-2 mt-1 mb-1 font-normal text-gray-700 dark:text-gray-400">{Artist}</p>
         </div>
 </div>
 </div>
