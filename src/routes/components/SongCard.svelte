@@ -18,11 +18,11 @@
 
         <div class="p-6">
         <img class="mx-auto rounded-md" src={AlbumArt} height="120px" width="120px" alt="{Album} - Album Cover" />
-	<a src={AlbumURL} class="text-center text-2xl font-semibold tracking-light text-gray-900 font-sans subpixel-antialiased dark:text-white">{Title}</a>
+	<a href={AlbumURL} class="text-center text-2xl font-semibold tracking-light text-gray-900 font-sans subpixel-antialiased dark:text-white">{Title}</a>
 
         <div class="p-2"></div>
 
-        <a class="flex" src={ArtistURL}>
+        <a class="flex" href={ArtistURL}>
            <img class="h-8 rounded-full" src={ArtistImage} height="30px" width="30px" alt="Main Artist Image" />
 	   <p class="ml-2 mt-1 mb-1 font-normal text-gray-700 dark:text-gray-400">{Artist}</p>
         </a>
