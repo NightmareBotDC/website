@@ -4,6 +4,8 @@
    export let Artist: String;
    export let AlbumArt: String;
    export let ArtistImage: String;
+   export let ArtistURL: string;
+   export let AlbumURL: string;
    export let Player: String = "Spotify";
 </script>
 
