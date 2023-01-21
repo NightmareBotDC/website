@@ -16,7 +16,7 @@
 
         <div class="p-6">
         <img class="mx-auto rounded-md" src={AlbumArt} height="120px" width="120px" alt="{Album} - Album Cover" />
-	<h2 class="text-center text-2xl font-semibold tracking-light text-gray-900 not-italic dark:text-white">{Title}</h2>
+	<h2 class="text-center text-2xl font-semibold tracking-light text-gray-900 not-italic subpixel-antialiased dark:text-white">{Title}</h2>
 
         <div class="p-2"></div>
 
