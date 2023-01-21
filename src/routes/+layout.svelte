@@ -14,7 +14,9 @@
 <div class="p-3" />
 
 {#if loading}
-   <BarLoader size="60" color="#FF3E00" unit="px" duration="5s" />
+   <div class="m-4">
+       <BarLoader size="120" color="#FF3E00" unit="px" duration="5s" />
+   </div>
 {:else}
    <section id="content" class="m-4">
 	<slot />
