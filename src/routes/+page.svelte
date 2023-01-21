@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Meta from './components/Meta.svelte';
         import SongCard from './components/SongCard.svelte';
-	import { BarLoader } from 'svelte-loading-spinners';
 
         export let data: any;
 </script>
@@ -10,8 +9,6 @@
 	Title="Home"
 	Description="Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems."
 />
-
-<BarLoader size="60" color="#FF3E00" unit="px" duration="5s" />
 
 <div id="currentlyPlaying">
 	{#if data.currentlyPlaying.error}
