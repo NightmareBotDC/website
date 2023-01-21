@@ -15,13 +15,13 @@
         <h2 class="pl-5 pt-4 font-normal text-gray-700 dark:text-gray-400">Currently Listening | {Player}</h2>
 
         <div class="p-6">
-        <img class="mx-auto rounded-md" src={AlbumArt} height="70px" width="70px" alt="{Album} - Album Cover" />
+        <img class="mx-auto rounded-md" src={AlbumArt} height="120px" width="120px" alt="{Album} - Album Cover" />
 	<h2 class="text-center text-2xl font-semibold tracking-light text-gray-900 font-sans subpixel-antialiased dark:text-white">{Title}</h2>
 
         <div class="p-2"></div>
 
         <div class="flex">
-           <img class="h-10 rounded-full" src={ArtistImage} height="40px" width="40px" alt="Main Artist Image" />
+           <img class="h-8 rounded-full" src={ArtistImage} height="30px" width="30px" alt="Main Artist Image" />
 	   <p class="ml-2 mt-4 mb-2 font-normal text-gray-700 dark:text-gray-400">{Artists}</p>
         </div>
 </div>
