@@ -11,7 +11,7 @@
 	Description="Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems."
 />
 
-<BarLoader size="60" color="#FF3E00" unit="px" duration="25s" />
+<BarLoader size="60" color="#FF3E00" unit="px" duration="5s" />
 
 <div id="currentlyPlaying">
 	{#if data.currentlyPlaying.error}
