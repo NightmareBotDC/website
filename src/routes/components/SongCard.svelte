@@ -17,8 +17,11 @@
         <h2 class="pl-5 pt-4 font-normal text-gray-700 dark:text-gray-400">Currently Listening | {Player}</h2>
 
         <div class="p-6">
-        <img class="mx-auto rounded-md" src={AlbumArt} height="120px" width="120px" alt="{Album} - Album Cover" />
-	<h2 on:click={() => {window.location.href = AlbumURL}} class="text-center text-2xl font-semibold tracking-light text-gray-900 font-sans subpixel-antialiased dark:text-white">{Title}</h2>
+
+        <div on:click={() => {window.location.href = AlbumURL}}>
+            <img class="mx-auto rounded-md" src={AlbumArt} height="120px" width="120px" alt="{Album} - Album Cover" />
+	    <h2 class="text-center text-2xl font-semibold tracking-light text-gray-900 font-sans subpixel-antialiased dark:text-white">{Title}</h2>
+        </div>
 
         <div class="p-2"></div>
 
