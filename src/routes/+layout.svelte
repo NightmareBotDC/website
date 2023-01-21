@@ -15,7 +15,8 @@
 
 {#if loading}
    <div class="m-4">
-       <BarLoader size="120" color="#FF3E00" unit="px" duration="5s" />
+       <h2 class="text-white">Loading...</h2>
+       <BarLoader size="120" color="#FF3E00" unit="px" duration="1s" />
    </div>
 {:else}
    <section id="content" class="m-4">
