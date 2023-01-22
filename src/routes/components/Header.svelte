@@ -190,7 +190,7 @@
 					>
 				{/each}
 			</div>
-            
+
 			{#if User}
 				<div class="border-t border-gray-700 pt-4 pb-3">
 					<div class="flex items-center px-5">
