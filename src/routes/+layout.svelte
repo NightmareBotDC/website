@@ -6,7 +6,7 @@
 	let loading = true;
 	setTimeout(() => {
 		loading = false;
-	}, 3000);
+	}, 6000);
 
 	export let data: any;
 </script>
