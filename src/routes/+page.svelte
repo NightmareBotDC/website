@@ -24,7 +24,9 @@
 	{/if}
 </div>
 
-<!--<div id="recentlyPlayed">
+<div class="p-4"></div>
+
+<div id="recentlyPlayed">
     {#if data.recentlyPlayed.error}{:else}
              {#each data.recentlyPlayed.items as track}
                   <SongCard
@@ -38,4 +40,4 @@
 		/>
              {/each}
     {/if}
-</div>-->
+</div>
