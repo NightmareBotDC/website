@@ -24,8 +24,6 @@
 	{/if}
 </div>
 
-<h2 class="text-white">{JSON.stringify(data)}</h2>
-
 <div id="recentlyPlayed">
     {#if data.recentlyPlayed.error}{:else}
              {#each data.recentlyPlayed.items as track}
