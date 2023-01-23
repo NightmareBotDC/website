@@ -26,6 +26,8 @@
 
 <div id="recentlyPlayed">
     {#if data.recentlyPlayed.error}{:else}
+             <h2 class="text-white">{JSON.stringify(data.recentlyPlayed)}</h2>
+
              {#each data.recentlyPlayed.items as track}
                   <SongCard
 			Title={track.song.item.name}
