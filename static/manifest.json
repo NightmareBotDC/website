@@ -16,9 +16,14 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "./logo.png",
+      "src": "/logo.png",
       "type": "image/png",
       "sizes": "220x220"
+    },
+    {
+      "src": "/logo_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "shortcuts": [],
