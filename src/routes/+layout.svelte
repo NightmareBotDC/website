@@ -17,6 +17,7 @@
 
 {#if loading}
 	<div class="m-4">
+                <slot style="display: none" />
 		<h2 class="text-white font-semibold">Loading...</h2>
 		<BarLoader size="120" color="#FF3E00" unit="px" duration="1s" />
 	</div>
