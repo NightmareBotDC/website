@@ -31,12 +31,12 @@
              {#each data.recentlyPlayed.items as item}
                   <SongCard
 			Title={item.song.track.item.name}
-			Album={item.song.track.album.name}
-			Artist={item.song.track.artists[0].name}
-			AlbumArt={item.song.track.album.images[0].url}
+			Album={item.song.track.item.album.name}
+			Artist={item.song.track.item.artists[0].name}
+			AlbumArt={item.song.track.item.album.images[0].url}
 			ArtistImage={item.artistData.images[0].url}
-			AlbumURL={item.song.track.album.external_urls.spotify}
-			ArtistURL={item.song.track.artists[0].external_urls.spotify}
+			AlbumURL={item.song.track.item.album.external_urls.spotify}
+			ArtistURL={item.song.track.item.artists[0].external_urls.spotify}
 		  />
              {/each}
     {/if}
