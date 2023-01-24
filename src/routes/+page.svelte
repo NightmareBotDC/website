@@ -20,6 +20,7 @@
 			ArtistImage={data.currentlyPlaying.item.artistData.images[0].url}
 			AlbumURL={data.currentlyPlaying.item.album.external_urls.spotify}
 			ArtistURL={data.currentlyPlaying.item.artists[0].external_urls.spotify}
+                        Current=true
 		/>
 	{/if}
 </div>
@@ -37,6 +38,7 @@
 			ArtistImage={item.artistData.images[0].url}
 			AlbumURL={item.song.track.album.external_urls.spotify}
 			ArtistURL={item.song.track.artists[0].external_urls.spotify}
+                        Current=false
 		  />
              {/each}
     {/if}
