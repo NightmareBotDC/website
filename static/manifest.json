@@ -1,0 +1,27 @@
+{
+  "background_color": "#ff914d",
+  "description": "Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems.",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "Nightmare Project",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "Nightmare Bot",
+  "start_url": "/",
+  "theme_color": "#3c3c3c",
+  "categories": [
+    "entertainment",
+    "utilities"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "./logo.png",
+      "type": "image/png",
+      "sizes": "220x220"
+    }
+  ],
+  "shortcuts": [],
+  "lang": "en",
+  "prefer_related_applications": false
+}
