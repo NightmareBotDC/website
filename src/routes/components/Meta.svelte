@@ -12,4 +12,5 @@
 	<meta property="og:url" content="https://nightmarebot.tk/" />
 	<meta property="og:image" content={Image} />
 	<meta property="og:description" content={Description} />
+        <link rel="manifest" href="https://nightmarebot.tk/manifest.json">
 </svelte:head>
