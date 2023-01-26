@@ -10,6 +10,10 @@
 	Description="Nightmare Bot is a personal assistant project that uses Artificial Intelligence and Machine Learning algorithms to solve problems."
 />
 
+{#if data.currentlyPlaying.error && data.recentlyPlayed.error}
+   <h2 class="text-white font-semibold">Sorry, there is no Entertainment-based content to display at this time.</h2>
+{/if}
+
 <div id="currentlyPlaying">
 	{#if data.currentlyPlaying.error}{:else}
 		<SongCard
@@ -27,7 +31,7 @@
 
 <div class="p-4"></div>
 
-<div id="recentlyPlayed">
+<div id="recentTracks">
     {#if data.recentlyPlayed.error}{:else}
              {#each data.recentlyPlayed.items as item}
                   <SongCard
