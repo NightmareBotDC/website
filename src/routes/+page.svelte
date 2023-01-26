@@ -17,6 +17,8 @@
 <div id="currentlyPlaying">
 	{#if data.currentlyPlaying.error}{:else}
                 <h2 class="text-white font-semibold text-2xl">Currently Listening:</h2>
+                
+                <div class="p-1"></div>
 
 		<SongCard
 			Title={data.currentlyPlaying.item.name}
@@ -36,6 +38,8 @@
 <div id="recentTracks">
     {#if data.recentlyPlayed.error}{:else}
              <h2 class="text-white font-semibold text-2xl">Recent Tracks:</h2>
+
+             <div class="p-1"></div>
 
              {#each data.recentlyPlayed.items as item}
                   <SongCard
