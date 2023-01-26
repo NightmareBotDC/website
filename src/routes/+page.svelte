@@ -16,6 +16,8 @@
 
 <div id="currentlyPlaying">
 	{#if data.currentlyPlaying.error}{:else}
+                <h2 class="text-white font-semibold">Currently Listening:</h2>
+
 		<SongCard
 			Title={data.currentlyPlaying.item.name}
 			Album={data.currentlyPlaying.item.album.name}
@@ -33,6 +35,8 @@
 
 <div id="recentTracks">
     {#if data.recentlyPlayed.error}{:else}
+             <h2 class="text-white font-semibold">Recent Tracks:</h2>
+
              {#each data.recentlyPlayed.items as item}
                   <SongCard
 			Title={item.song.track.name}
