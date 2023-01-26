@@ -55,7 +55,8 @@
                         Current={false}
 		  />
 
-                  <div class="pr-1"></div></div>
+                  <div class="pr-1"></div>
              {/each}
+             </div>
     {/if}
 </div>
