@@ -42,7 +42,7 @@
              <div class="p-1"></div>
 
              
-             <div class="flex overflow-x-auto space-x-8">
+             <div class="flex overflow-x-auto space-x-4">
              {#each data.recentlyPlayed.items as item}
                   <SongCard
 			Title={item.song.track.name}
@@ -54,8 +54,6 @@
 			ArtistURL={item.song.track.artists[0].external_urls.spotify}
                         Current={false}
 		  />
-
-                  <div class="pr-1"></div>
              {/each}
              </div>
     {/if}
