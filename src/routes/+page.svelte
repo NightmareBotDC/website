@@ -42,7 +42,7 @@
              <div class="p-1"></div>
 
              
-             <div class="flex overflow-x-auto space-x-8 w-1/2 bg-red-200">
+             <div class="flex overflow-x-auto space-x-8 w-1/2">
              {#each data.recentlyPlayed.items as item}
                   <SongCard
 			Title={item.song.track.name}
