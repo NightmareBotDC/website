@@ -11,12 +11,12 @@
 />
 
 {#if data.currentlyPlaying.error && data.recentlyPlayed.error}
-   <h2 class="text-white font-semibold">Sorry, there is no Entertainment-based content to display at this time.</h2>
+   <h2 class="text-white font-semibold text-xl">Sorry, there is no Entertainment-based content to display at this time.</h2>
 {/if}
 
 <div id="currentlyPlaying">
 	{#if data.currentlyPlaying.error}{:else}
-                <h2 class="text-white font-semibold">Currently Listening:</h2>
+                <h2 class="text-white font-semibold text-2xl">Currently Listening:</h2>
 
 		<SongCard
 			Title={data.currentlyPlaying.item.name}
@@ -28,14 +28,14 @@
 			ArtistURL={data.currentlyPlaying.item.artists[0].external_urls.spotify}
                         Current={true}
 		/>
+ 
+                <div class="p-4"></div>
 	{/if}
 </div>
 
-<div class="p-4"></div>
-
 <div id="recentTracks">
     {#if data.recentlyPlayed.error}{:else}
-             <h2 class="text-white font-semibold">Recent Tracks:</h2>
+             <h2 class="text-white font-semibold text-2xl">Recent Tracks:</h2>
 
              {#each data.recentlyPlayed.items as item}
                   <SongCard
