@@ -52,6 +52,8 @@
 			ArtistURL={item.song.track.artists[0].external_urls.spotify}
                         Current={false}
 		  />
+
+                  <div class="p-1"></div>
              {/each}
     {/if}
 </div>
