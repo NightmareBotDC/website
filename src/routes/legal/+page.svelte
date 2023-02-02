@@ -1,5 +1,5 @@
-<h2 class="text-white font-bold">Legal</h2>
-<h6 class="text-white">This page provides some links to our legal policy pages such as our Terms of Service.</h6>
+<h2 class="text-white font-bold text-2xl">Legal</h2>
+<h6 class="text-gray-400">This page provides some links to our legal policy pages such as our Terms of Service.</h6>
 
 <div class="p-4"></div>
 
