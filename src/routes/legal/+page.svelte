@@ -4,7 +4,9 @@
 <div class="p-4"></div>
 
 <div id="legal">
-   <a class="text-red font-bold" href="/legal/terms">Terms of Service</a>
-   <a class="text-red font-bold" href="/legal/uselicense">Use License</a>
-   <a class="text-red font-bold" href="/legal/sourcelicense">Source License</a>
+   <a class="text-red-600 font-bold" href="/legal/terms">Terms of Service</a>
+   <div class="p-2"></div>
+   <a class="text-red-600 font-bold" href="/legal/uselicense">Use License</a>
+   <div class="p-2"></div>
+   <a class="text-red-600 font-bold" href="/legal/sourcelicense">Source License</a>
 </div>
