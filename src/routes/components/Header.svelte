@@ -259,7 +259,13 @@
 					</div>
 				</div>
                         {:else}
-                             <button on:click={loginDiscord} class="text-gray-600">Login</button>
+                             <button
+								type="button"
+								on:click={loginDiscord}
+								class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none"
+							>
+								Login
+							</button>
 			{/if}
 		</div>
 	</nav>
