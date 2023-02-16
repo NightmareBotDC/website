@@ -7,11 +7,11 @@ export const load = async ({ request, setHeaders }) => {
 		(res) => res.json()
 	);
 
-        const recentlyPlayed = await fetch('https://api.nightmarebot.tk/api/spotify/recent').then(
-		(res) => res.json()
+	const recentlyPlayed = await fetch('https://api.nightmarebot.tk/api/spotify/recent').then((res) =>
+		res.json()
 	);
 
-        if (cookies.token) {
+	if (cookies.token) {
 		const userData = await fetch(
 			`https://api.nightmarebot.tk/api/users/getwithtoken?token=${cookies.token}`
 		)
@@ -24,18 +24,18 @@ export const load = async ({ request, setHeaders }) => {
 			return {
 				user: null,
 				currentlyPlaying: currentlyPlaying,
-                                recentlyPlayed: recentlyPlayed
+				recentlyPlayed: recentlyPlayed
 			};
 		else
 			return {
 				user: userData,
 				currentlyPlaying: currentlyPlaying,
-                                recentlyPlayed: recentlyPlayed
+				recentlyPlayed: recentlyPlayed
 			};
 	} else
 		return {
 			user: null,
 			currentlyPlaying: currentlyPlaying,
-                        recentlyPlayed: recentlyPlayed
+			recentlyPlayed: recentlyPlayed
 		};
 };

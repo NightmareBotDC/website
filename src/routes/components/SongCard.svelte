@@ -6,7 +6,7 @@
 	export let ArtistImage: string;
 	export let ArtistURL: string;
 	export let AlbumURL: string;
-        export let Current: boolean;
+	export let Current: boolean;
 	export let Player: string = 'Spotify';
 </script>
 
@@ -16,7 +16,7 @@
 		class="max-w-sm bg-white rounded-md border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
 	>
 		<h2 class="pl-5 pt-4 font-normal text-gray-700 dark:text-gray-400">
-			{Current ? "Currently Listening" : "Recent Track"} | {Player}
+			{Current ? 'Currently Listening' : 'Recent Track'} | {Player}
 		</h2>
 
 		<div class="p-6">

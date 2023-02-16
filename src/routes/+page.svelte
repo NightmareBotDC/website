@@ -11,14 +11,16 @@
 />
 
 {#if data.currentlyPlaying.error && data.recentlyPlayed.error}
-   <h2 class="text-white font-semibold text-xl">Sorry, there is no Entertainment-based content to display at this time.</h2>
+	<h2 class="text-white font-semibold text-xl">
+		Sorry, there is no Entertainment-based content to display at this time.
+	</h2>
 {/if}
 
 <div id="currentlyPlaying">
 	{#if data.currentlyPlaying.error}{:else}
-                <h2 class="text-white font-semibold text-2xl">Currently Listening:</h2>
-                
-                <div class="p-1"></div>
+		<h2 class="text-white font-semibold text-2xl">Currently Listening:</h2>
+
+		<div class="p-1" />
 
 		<SongCard
 			Title={data.currentlyPlaying.item.name}
@@ -28,32 +30,32 @@
 			ArtistImage={data.currentlyPlaying.item.artistData.images[0].url}
 			AlbumURL={data.currentlyPlaying.item.album.external_urls.spotify}
 			ArtistURL={data.currentlyPlaying.item.artists[0].external_urls.spotify}
-                        Current={true}
+			Current={true}
 		/>
- 
-                <div class="p-4"></div>
+
+		<div class="p-4" />
 	{/if}
 </div>
 
 <div id="recentTracks">
-    {#if data.recentlyPlayed.error}{:else}
-             <h2 class="text-white font-semibold text-2xl">Recent Tracks:</h2>
+	{#if data.recentlyPlayed.error}{:else}
+		<h2 class="text-white font-semibold text-2xl">Recent Tracks:</h2>
 
-             <div class="p-1"></div>
+		<div class="p-1" />
 
-             {#each data.recentlyPlayed.items as item}
-                  <SongCard
-			Title={item.song.track.name}
-			Album={item.song.track.album.name}
-			Artist={item.song.track.artists[0].name}
-			AlbumArt={item.song.track.album.images[0].url}
-			ArtistImage={item.artistData.images[0].url}
-			AlbumURL={item.song.track.album.external_urls.spotify}
-			ArtistURL={item.song.track.artists[0].external_urls.spotify}
-                        Current={false}
-		  />
+		{#each data.recentlyPlayed.items as item}
+			<SongCard
+				Title={item.song.track.name}
+				Album={item.song.track.album.name}
+				Artist={item.song.track.artists[0].name}
+				AlbumArt={item.song.track.album.images[0].url}
+				ArtistImage={item.artistData.images[0].url}
+				AlbumURL={item.song.track.album.external_urls.spotify}
+				ArtistURL={item.song.track.artists[0].external_urls.spotify}
+				Current={false}
+			/>
 
-                  <div class="p-1"></div>
-             {/each}
-    {/if}
+			<div class="p-1" />
+		{/each}
+	{/if}
 </div>
