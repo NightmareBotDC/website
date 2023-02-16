@@ -10,6 +10,17 @@
 		}
 	];
 
+        const loginDiscord = async () => {
+		const data = await fetch('https://api.nightmarebot.tk/auth/discord/login').catch((error) => {
+                     return;
+		});
+		if (data.status === 200) {
+			const json = await data.json();
+			if (json.error) return;
+			else window.location.href = json.url;
+		} else return;
+	};
+
 	const openMobileMenu = () => {
 		const menu = document.getElementById('mobile-menu') as HTMLDivElement;
 		const menuIcon = document.getElementById('menuIcon') as HTMLElement;
@@ -247,6 +258,8 @@
 						>
 					</div>
 				</div>
+                        {:else}
+                             <button on:click={loginDiscord} class="text-gray-600">Login</button>
 			{/if}
 		</div>
 	</nav>
