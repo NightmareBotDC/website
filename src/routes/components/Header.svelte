@@ -127,9 +127,9 @@
 			</div>
 			<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
 				<div class="flex flex-shrink-0 items-center">
-					<img class="block h-8 w-auto lg:hidden" src="/logo.png" alt="The Nightmare Project" />
+					<img class="block h-8 w-auto rounded-md lg:hidden" src="/logo.png" alt="The Nightmare Project" />
 
-					<img class="hidden h-8 w-auto lg:block" src="/logo.png" alt="The Nightmare Project" />
+					<img class="hidden h-8 w-auto rounded-md lg:block" src="/logo.png" alt="The Nightmare Project" />
 				</div>
 				<div class="hidden sm:ml-6 sm:block">
 					<div class="flex space-x-4">
