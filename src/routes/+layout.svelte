@@ -6,7 +6,7 @@
 	export let data: any;
 </script>
 
-<Header User={data.user || null} />
+<Header user={data.user || null} />
 <Status />
 
 <div class="p-3" />
