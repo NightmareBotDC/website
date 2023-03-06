@@ -27,7 +27,7 @@
 	};
 
 	const loginDiscord = async () => {
-		window.location.href = "https://api.nightmarebot.tk/auth/login";
+		window.location.href = "https://api.nightmarebot.tk/auth/login?client_id=website-0297";
 	};
 
 	const openMobileMenu = () => {
